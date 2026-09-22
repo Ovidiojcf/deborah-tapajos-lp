@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Deborah Tapajós — Brand Colors */
+--color-bordeaux-primary: #7a1c28;
+--color-bordeaux-hover: #5b131d;
+--color-gold-accent: #c5a059;
+
+/* Neutral Colors */
+--color-neutral-dark: #1f2937;
+--color-neutral-light: #f8f9fa;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+--color-bordeaux-primary: var(--color-bordeaux-primary);
+--color-bordeaux-hover: var(--color-bordeaux-hover);
+--color-gold-accent: var(--color-gold-accent);
+
+--color-neutral-dark: var(--color-neutral-dark);
+--color-neutral-light: var(--color-neutral-light);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+h1,
+h2,
+h3,
+h4 {
+font-family: var(--font-serif), serif;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
