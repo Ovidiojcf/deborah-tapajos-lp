@@ -11,6 +11,7 @@
 --color-neutral-light: #f8f9fa;
 }
 
+/* Design tokens */
 @theme inline {
 --color-bordeaux-primary: var(--color-bordeaux-primary);
 --color-bordeaux-hover: var(--color-bordeaux-hover);
@@ -18,13 +19,6 @@
 
 --color-neutral-dark: var(--color-neutral-dark);
 --color-neutral-light: var(--color-neutral-light);
-}
 
-@layer base {
-h1,
-h2,
-h3,
-h4 {
-font-family: var(--font-serif), serif;
-}
+--font-serif: var(--font-playfair-display);
 }
