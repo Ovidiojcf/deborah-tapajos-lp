@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/header";
+import { Hero } from "@/components/landing/hero";
 
 /* URL temporária para testes do CTA */
 const WHATSAPP_URL =
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header whatsappUrl={WHATSAPP_URL} />
+      <Hero whatsappUrl={WHATSAPP_URL} ></Hero>
       <main className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4">
         <section className="text-center">
           <span className="text-sm font-medium uppercase tracking-widest text-gold-accent">
