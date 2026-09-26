@@ -81,11 +81,11 @@ export function Hero({ whatsappUrl }: HeroProps) {
             priority
             sizes="(max-width: 1023px) 100vw, 50vw"
             className="
-    object-cover
-    object-top
-    lg:object-contain
-    lg:object-bottom
-  "
+            object-cover
+            object-top
+            lg:object-contain
+            lg:object-bottom
+          "
           />
 
           {/* Gradient somente no mobile */}
