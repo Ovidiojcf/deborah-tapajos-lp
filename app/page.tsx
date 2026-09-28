@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/header";
 import { Hero } from "@/components/landing/hero";
 import { Services } from "@/components/landing/services";
+import { Faq } from "@/components/landing/faq";
 
 /* URL temporária para testes do CTA */
 const WHATSAPP_URL =
@@ -44,6 +45,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Faq/>
     </div>
   );
 }
