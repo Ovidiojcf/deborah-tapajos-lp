@@ -76,7 +76,7 @@ export function Hero({ whatsappUrl }: HeroProps) {
 
           <Image
             src="/deborah-tapajos-02.webp"
-            alt="Dra. Deborah Tapajós"
+            alt="Dra. Deborah Tapajós especialista em Direito Médico, Cível, Criminal e Previdenciário em Santarém, Pará"
             fill
             priority
             sizes="(max-width: 1023px) 100vw, 50vw"
