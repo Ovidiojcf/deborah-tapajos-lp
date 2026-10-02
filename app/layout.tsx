@@ -18,8 +18,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Deborah Tapajós - Advocacia",
-  description: "Advogada Dra. Deborah Carolina Batista Tapajós, atuação em Santarém, Pará",
+  title: "Dra. Deborah Tapajós | Advocacia em Santarém - PA",
+  description: "Dra. Deborah Carolina Batista Tapajós atua nas áreas de Direito Médico, Cível, Criminal e Previdenciário em Santarém, Pará.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
