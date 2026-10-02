@@ -37,8 +37,8 @@ const practiceAreasData: PracticeArea[] = [
     gridSpan: "lg:col-span-2 lg:row-span-2",
   },
   {
-    id: "direito-civel",
-    title: "Direito Cível",
+    id: "direito-civil",
+    title: "Direito Civil",
     subtitle: "Patrimônio e Contratos",
     description:
       "Elaboração de contratos, ações indenizatórias, cobranças e resolução de conflitos patrimoniais ou de responsabilidade civil.",

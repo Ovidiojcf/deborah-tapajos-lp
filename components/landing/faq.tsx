@@ -43,7 +43,7 @@ const faqData: FAQItem[] = [
   },
   {
     id: "indenizacao",
-    category: "Direito Cível",
+    category: "Direito Civil",
     question: "Como saber se tenho direito a uma indenização?",
     answer:
       "O direito a uma indenização depende das circunstâncias de cada situação. É necessário analisar o que aconteceu, quais danos foram causados, a existência de documentos e a relação entre o fato e o prejuízo alegado. Uma avaliação jurídica pode ajudar a identificar se existem fundamentos para uma eventual ação de responsabilidade civil.",
