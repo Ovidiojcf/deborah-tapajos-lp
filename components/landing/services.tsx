@@ -77,7 +77,7 @@ const practiceAreasData: PracticeArea[] = [
 export function Services({ whatsappUrl }: ServicesProps) {
   return (
     <section
-      id="servicos"
+      id="areas-de-atuacao"
       className="bg-neutral-light py-20 sm:py-24 lg:py-28"
       aria-labelledby="services-title"
     >
