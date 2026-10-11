@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 type FAQItem = {
@@ -73,12 +70,6 @@ const faqData: FAQItem[] = [
 ];
 
 export function Faq() {
-  const [openItem, setOpenItem] = useState<string | null>(null);
-
-  const handleToggle = (id: string) => {
-    setOpenItem((current) => (current === id ? null : id));
-  };
-
   return (
     <section
       id="faq"
@@ -109,57 +100,36 @@ export function Faq() {
         {/* FAQ list */}
         <div className="mx-auto mt-12 max-w-4xl">
           <div className="divide-y divide-neutral-dark/10 border-y border-neutral-dark/10">
-            {faqData.map((item) => {
-              const isOpen = openItem === item.id;
-
-              return (
-                <div key={item.id} className="group">
-                  <button
-                    type="button"
-                    className="flex w-full items-center justify-between gap-6 py-6 text-left transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux-primary"
-                    aria-expanded={isOpen}
-                    aria-controls={`${item.id}-content`}
-                    onClick={() => handleToggle(item.id)}
-                  >
-                    <span className="flex flex-col gap-2">
-                      <span className="text-xs font-medium uppercase tracking-[0.12em] text-gold-accent">
-                        {item.category}
-                      </span>
-
-                      <span className="font-serif text-lg font-semibold leading-7 text-bordeaux-primary transition-colors duration-200 group-hover:text-bordeaux-hover sm:text-xl">
-                        {item.question}
-                      </span>
+            {faqData.map((item) => (
+              <details key={item.id} name="faq" className="group">
+                <summary
+                  className="flex w-full cursor-pointer list-none items-center justify-between gap-6 py-6 text-left transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux-primary [&::-webkit-details-marker]:hidden"
+                >
+                  <span className="flex flex-col gap-2">
+                    <span className="text-xs font-medium uppercase tracking-[0.12em] text-gold-accent">
+                      {item.category}
                     </span>
 
-                    <span
-                      className={`flex size-10 shrink-0 items-center justify-center rounded-full border border-bordeaux-primary/15 text-bordeaux-primary transition-all duration-300 ${
-                        isOpen
-                          ? "rotate-180 bg-bordeaux-primary text-white"
-                          : "bg-transparent"
-                      }`}
-                      aria-hidden="true"
-                    >
-                      <ChevronDown className="size-5" strokeWidth={1.7} />
+                    <span className="font-serif text-lg font-semibold leading-7 text-bordeaux-primary transition-colors duration-200 group-hover:text-bordeaux-hover sm:text-xl">
+                      {item.question}
                     </span>
-                  </button>
+                  </span>
 
-                  <div
-                    id={`${item.id}-content`}
-                    className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
-                      isOpen
-                        ? "grid-rows-[1fr] opacity-100"
-                        : "grid-rows-[0fr] opacity-0"
-                    }`}
+                  <span
+                    className="flex size-10 shrink-0 items-center justify-center rounded-full border border-bordeaux-primary/15 text-bordeaux-primary transition-all duration-300 group-open:rotate-180 group-open:bg-bordeaux-primary group-open:text-white"
+                    aria-hidden="true"
                   >
-                    <div className="overflow-hidden">
-                      <p className="max-w-3xl pb-6 pr-16 text-sm leading-7 text-neutral-dark/70 sm:text-base sm:leading-8">
-                        {item.answer}
-                      </p>
-                    </div>
-                  </div>
+                    <ChevronDown className="size-5" strokeWidth={1.7} />
+                  </span>
+                </summary>
+
+                <div className="pb-6 pr-16">
+                  <p className="max-w-3xl text-sm leading-7 text-neutral-dark/70 sm:text-base sm:leading-8">
+                    {item.answer}
+                  </p>
                 </div>
-              );
-            })}
+              </details>
+            ))}
           </div>
         </div>
       </div>

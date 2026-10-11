@@ -135,7 +135,7 @@ export function Services({ whatsappUrl }: ServicesProps) {
                 {/* Card content */}
                 <div className="relative z-10 flex h-full flex-col justify-between p-6 sm:p-7 lg:p-8">
                   <div className="flex items-start justify-between gap-4">
-                    <div className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-gold-accent">
+                    <div className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-gold-accent shadow-[0_8px_18px_rgba(0,0,0,0.12)]">
                       <Icon
                         className="size-5"
                         strokeWidth={1.7}
@@ -143,7 +143,7 @@ export function Services({ whatsappUrl }: ServicesProps) {
                       />
                     </div>
 
-                    <span className="rounded-full border border-white/20 bg-black/20 px-3 py-1 text-xs font-medium uppercase tracking-[0.12em] text-white/90 backdrop-blur-sm">
+                    <span className="rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-white/90 backdrop-blur-sm sm:text-xs">
                       {area.badge}
                     </span>
                   </div>

@@ -1,29 +1,52 @@
 @import "tailwindcss";
 
 :root {
-/* Deborah Tapajós — Brand Colors */
---color-bordeaux-primary: #7a1c28;
---color-bordeaux-hover: #5b131d;
---color-gold-accent: #c5a059;
+  /* Deborah Tapajós — Brand Colors */
+  --color-bordeaux-primary: #7a1c28;
+  --color-bordeaux-hover: #5b131d;
+  --color-gold-accent: #c5a059;
 
-/* Neutral Colors */
---color-neutral-dark: #1f2937;
---color-neutral-light: #f8f9fa;
+  /* Neutral Colors */
+  --color-neutral-dark: #1f2937;
+  --color-neutral-light: #f8f9fa;
 }
 
 /* Design tokens */
 @theme inline {
---color-bordeaux-primary: var(--color-bordeaux-primary);
---color-bordeaux-hover: var(--color-bordeaux-hover);
---color-gold-accent: var(--color-gold-accent);
+  --color-bordeaux-primary: var(--color-bordeaux-primary);
+  --color-bordeaux-hover: var(--color-bordeaux-hover);
+  --color-gold-accent: var(--color-gold-accent);
 
---color-neutral-dark: var(--color-neutral-dark);
---color-neutral-light: var(--color-neutral-light);
+  --color-neutral-dark: var(--color-neutral-dark);
+  --color-neutral-light: var(--color-neutral-light);
 
---font-serif: var(--font-playfair-display);
+  --font-serif: var(--font-playfair-display);
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Header scroll effect */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #f8f9fa;
+  color: #1f2937;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(122, 28, 40, 0.18);
+  color: #1f2937;
+}
+
+img {
+  user-select: none;
+}
+
+:focus-visible {
+  outline: 2px solid #7a1c28;
+  outline-offset: 2px;
 }

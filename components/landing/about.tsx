@@ -12,7 +12,7 @@ export function About({ whatsappUrl }: AboutProps) {
       aria-labelledby="about-title"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <div className="relative mx-auto aspect-4/5 w-full max-w-md overflow-hidden rounded-2xl bg-neutral-light">
+        <div className="relative mx-auto aspect-4/5 w-full max-w-md overflow-hidden rounded-[28px] border border-bordeaux-primary/10 bg-neutral-light shadow-[0_24px_60px_rgba(122,28,40,0.12)]">
           <Image
             src="/deborah-tapajos-02.webp"
             alt="Dra. Deborah Tapajós"
@@ -34,26 +34,29 @@ export function About({ whatsappUrl }: AboutProps) {
             Dra. Deborah Tapajós
           </h2>
 
-          <div className="mt-6 space-y-4 text-base text-justify leading-7 text-neutral-dark/75 sm:text-lg sm:leading-8">
+          <div className="mt-6 space-y-4 text-base leading-7 text-neutral-dark/75 sm:text-lg sm:leading-8">
             <p>
-              Texto provisório para validar a tipografia, a extensão e a leitura
-              desta apresentação em diferentes tamanhos de tela.
+              Advogada com atuação focada em atendimento estratégico, humanizado e
+              orientado para a realidade de cada cliente. A proposta é oferecer
+              clareza, segurança e acompanhamento profissional em momentos que
+              exigem decisão e conhecimento jurídico.
             </p>
             <p>
-              Este conteúdo será substituído por informações aprovadas sobre a
-              trajetória profissional, a forma de atendimento e os valores que
-              orientam a atuação da advogada.
+              A atuação prioriza soluções práticas e bem fundamentadas, com atenção
+              às particularidades de cada demanda e à necessidade de uma
+              comunicação transparente desde o primeiro contato.
             </p>
             <p>
-              A versão final poderá apresentar aos visitantes uma visão clara
-              sobre o escritório e sobre como funciona o primeiro contato.
+              A relação com o cliente é construída com profissionalismo, respeito
+              e foco em proteger direitos com técnica, responsabilidade e
+              sensibilidade.
             </p>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3n justify-center">
+          <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
             <a
               href={whatsappUrl}
-              className="inline-flex min-h-11 items-center justify-center rounded-full bg-bordeaux-primary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-bordeaux-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux-primary"
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-bordeaux-primary px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-bordeaux-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux-primary"
             >
               Falar com a Dra. Deborah
             </a>
