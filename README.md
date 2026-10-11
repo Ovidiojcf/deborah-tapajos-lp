@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Bundle analysis
+
+Next.js 16.3 includes the Turbopack Bundle Analyzer, so no additional package is needed. The analyzer is experimental and requires Turbopack:
+
+```bash
+npm run analyze
+```
+
+This builds the production app with bundle analysis enabled and opens the interactive report. Filter by route, client/server environment, and file type, then inspect a module's import chain. To write a static report without starting the analyzer UI, run:
+
+```bash
+npm run analyze:output
+```
+
+The static report is written to `.next/diagnostics/analyze` (inside the ignored `.next` directory). Focus on JavaScript modules in the client bundle and trace large modules to their importing packages. This helps locate dependencies contributing to client-side JavaScript; confirm any suspected polyfill against the browser coverage or PageSpeed report, since bundle size alone does not identify whether code is a polyfill.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
