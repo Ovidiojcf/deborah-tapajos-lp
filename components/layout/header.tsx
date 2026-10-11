@@ -40,17 +40,16 @@ export function Header({ whatsappUrl }: HeaderProps) {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between gap-6">
-          {/* Marca */}
           <a
             href="#inicio"
             className="flex shrink-0 items-baseline gap-1.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux-primary"
             aria-label="Deborah Tapajós - início"
           >
             <span className="font-serif text-xl font-bold tracking-tight text-bordeaux-primary sm:text-2xl">
-                Dra. Deborah Tapajós
+              Dra. Deborah Tapajós
             </span>
           </a>
-          {/* Navegação desktop */}
+
           <nav
             className="hidden items-center md:flex"
             aria-label="Navegação principal"
@@ -68,11 +67,11 @@ export function Header({ whatsappUrl }: HeaderProps) {
               ))}
             </ul>
           </nav>
-          {/* CTA + menu mobile */}
+
           <div className="flex items-center gap-2">
             <a
               href={whatsappUrl}
-              className="hidden h-10 items-center gap-2 rounded-full bg-bordeaux-primary px-5 text-sm font-semibold text-white transition-colors hover:bg-bordeaux-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux-primary sm:flex"
+              className="hidden h-10 items-center gap-2 rounded-full bg-bordeaux-primary px-5 text-sm font-semibold text-white transition-all duration-200 hover:bg-bordeaux-hover hover:shadow-[0_12px_30px_rgba(122,28,40,0.2)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux-primary sm:flex"
               aria-label="Falar com a Dra. Deborah no WhatsApp"
             >
               <WhatsAppIcon />
@@ -96,7 +95,7 @@ export function Header({ whatsappUrl }: HeaderProps) {
           </div>
         </div>
       </div>
-      {/* Menu mobile */}
+
       {mobileMenuOpen && (
         <div
           id="mobile-menu"
@@ -123,7 +122,7 @@ export function Header({ whatsappUrl }: HeaderProps) {
             <a
               href={whatsappUrl}
               onClick={handleCloseMenu}
-              className="mt-6 flex h-11 w-full items-center justify-center gap-2 rounded-full bg-bordeaux-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-bordeaux-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux-primary"
+              className="mt-6 flex h-11 w-full items-center justify-center gap-2 rounded-full bg-bordeaux-primary px-6 text-sm font-semibold text-white transition-all duration-200 hover:bg-bordeaux-hover hover:shadow-[0_10px_20px_rgba(122,28,40,0.18)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux-primary"
               aria-label="Falar com a Dra. Deborah no WhatsApp"
             >
               <WhatsAppIcon />
