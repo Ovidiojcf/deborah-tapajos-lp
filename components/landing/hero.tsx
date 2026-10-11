@@ -11,7 +11,7 @@ export function Hero({ whatsappUrl }: HeroProps) {
       className="relative overflow-hidden bg-neutral-light"
       aria-labelledby="hero-title"
     >
-      <div className="mx-auto grid min-h-120 max-w-7xl lg:min-h-[calc(100svh-4rem)] lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
+      <div className="mx-auto grid min-h-175 max-w-7xl lg:min-h-[calc(100svh-4rem)] lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
         <div className="relative col-start-1 row-start-1 h-full overflow-hidden lg:col-start-2 lg:min-h-[calc(100svh-4rem)] lg:overflow-visible">
           <div
             className="pointer-events-none absolute left-1/2 top-1/2 hidden size-[min(34rem,70vw)] -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold-accent/20 lg:block"
