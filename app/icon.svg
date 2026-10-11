@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#7a1c28" />
+  <text
+    x="32"
+    y="25"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="13"
+    fill="#c5a059"
+  >Dra.</text>
+  <text
+    x="32"
+    y="49"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="27"
+    font-weight="bold"
+    fill="#c5a059"
+  >DT</text>
+</svg>

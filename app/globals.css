@@ -22,3 +22,8 @@
 
 --font-serif: var(--font-playfair-display);
 }
+
+/* Header scroll effect */
+html {
+  scroll-behavior: smooth;
+}
