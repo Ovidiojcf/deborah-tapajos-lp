@@ -47,13 +47,7 @@ export function Header({ whatsappUrl }: HeaderProps) {
             aria-label="Deborah Tapajós - início"
           >
             <span className="font-serif text-xl font-bold tracking-tight text-bordeaux-primary sm:text-2xl">
-              Deborah
-            </span>
-            <span className="font-serif text-xl font-bold tracking-tight text-gold-accent sm:text-2xl">
-              Tapajós
-            </span>
-            <span className="ml-1 hidden text-xl font-bold uppercase tracking-wider text-neutral-dark/60 sm:inline">
-              Advogada
+                Dra. Deborah Tapajós
             </span>
           </a>
           {/* Navegação desktop */}
