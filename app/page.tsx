@@ -6,9 +6,7 @@ import { Faq } from "@/components/landing/faq";
 import { Footer } from "@/components/layout/footer";
 
 /* URL temporária para testes do CTA */
-const WHATSAPP_URL =
-  "https://wa.me/5593999999999?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta";
-
+const WHATSAPP_URL = "https://wa.me/559391186983?text=Ol%C3%A1%2C%20Dra.%20Deborah%21%20Vi%20seu%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20meu%20caso.%20Como%20podemos%20agendar%20um%20atendimento%3F";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">

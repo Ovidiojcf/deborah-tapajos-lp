@@ -9,19 +9,20 @@ type SocialLink = {
 };
 
 const socialLinks = [
-  {
+  // will be replace when the costumer provide the facebook profile link
+ /* {
     name: "Facebook",
     href: "https://www.facebook.com/",
     network: "facebook",
-  },
+  },*/
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/deborah-batista-aa45b240a?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     network: "linkedin",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://instagram.com/_deborahbatista?exln=MTZmZWh1ZjFvbWRldw%3D%3D",
     network: "instagram",
   },
 ] as const satisfies readonly SocialLink[];
@@ -29,7 +30,6 @@ const socialLinks = [
 type SocialMarkProps = {
   mark: SocialNetwork;
 };
-
 
 function SocialMark({ mark }: SocialMarkProps) {
   switch (mark) {
@@ -69,18 +69,11 @@ function SocialMark({ mark }: SocialMarkProps) {
         >
           <rect x="3" y="3" width="18" height="18" rx="5" />
           <circle cx="12" cy="12" r="4" />
-          <circle
-            cx="17.5"
-            cy="6.5"
-            r="1"
-            fill="currentColor"
-            stroke="none"
-          />
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
         </svg>
       );
   }
 }
-
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -100,7 +93,13 @@ export function Footer() {
           aria-label="Ovidiojcf DEV no GitHub"
         >
           Ovidiojcf DEV
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 fill-current"><path d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.6-4.1-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6a4.7 4.7 0 0 1 1.2-3.2c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2a4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.7-5.5 6 .4.3.8 1 .8 2v3c0 .3.2.7.8.6A12 12 0 0 0 12 .7Z"></path></svg>
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            className="h-5 w-5 fill-current"
+          >
+            <path d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.6-4.1-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6a4.7 4.7 0 0 1 1.2-3.2c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2a4.7 4.7 0 0 1 1.2 3.2c0 4.6-2.8 5.7-5.5 6 .4.3.8 1 .8 2v3c0 .3.2.7.8.6A12 12 0 0 0 12 .7Z"></path>
+          </svg>
         </a>
 
         <p className="flex items-center gap-1.5 text-center text-xs text-neutral-light/75 sm:text-sm">
